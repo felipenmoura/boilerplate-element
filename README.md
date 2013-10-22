@@ -6,7 +6,7 @@ This custom elemnt allows you to add stylized citations and blockquotes.
 
 ## Demo
 
-> [Check it live](felipenmoura.github.io/citation-custom-element/).
+> [Check it live](http://felipenmoura.github.io/citation-custom-element/).
 
 ## Usage
 
@@ -38,6 +38,19 @@ Attribute   | Options               | Default   | Description
 `href`      | *string*              | ``        | Citation source link or authors ref
 `color`     | `red`, `gree`, `blue` | ``        | A color effect to the citation(and decoration)
 `decoration`| *string*              | `—`       | A separator decoration to identify the author
+
+## Theming
+
+You can customize the element parts by adding properties to the following classes:
+
+  .citation-container{}
+  .citation-content{}
+  .citation-author{}
+  .citation-author a{}
+  .citation-container:before{} /* the decoration icon */
+  .citation-container.red{}
+  .citation-container.yellow{}
+  .citation-container.green{}
 
 
 ## Contributing
