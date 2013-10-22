@@ -48,11 +48,6 @@ Attribute   | Options               | Default   | Description
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-* v0.0.1 August 19, 2013
-	* Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
-
 ## License
 
 [MIT License](http://opensource.org/licenses/MIT)
