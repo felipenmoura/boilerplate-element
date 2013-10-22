@@ -4,7 +4,7 @@
 	<template extend="div">
 
             <style type="text/css">
-                blockquote.citation{
+                blockquote.citation-container{
                     border-left: 0.5em solid #DDD;
                     margin: 1.5em 0 1.5em 1.5em;
                     padding: .75em .5em .75em 1em;
@@ -19,7 +19,7 @@
                 }
 
 
-                blockquote.citation:before{
+                blockquote.citation-container:before{
                     display: block;
                     height: 0;
                     content: "“";
@@ -28,11 +28,11 @@
                     color: #999;
                 }
 
-                blockquote.citation cite{
+                blockquote.citation-container cite{
                     display: block;
                     font-size: 0.8em;
                 }
-                blockquote.citation cite a{
+                blockquote.citation-container cite a{
                     text-decoration: none !important;
                     color: #0090D2;
                 }
@@ -40,22 +40,22 @@
                     content: "—";
                     display: inline;
                 }*/
-                .citation.yellow{
+                .citation-container.yellow{
                     border-color: rgb(243, 243, 62);
                     box-shadow: 0 0 6px rgba(169, 184, 0, 0.5);
                     background-color: rgb(255, 255, 207);
                 }
-                .citation.red{
+                .citation-container.red{
                     border-color: rgb(245, 113, 113);
                     box-shadow: 0 0 6px rgba(253, 0, 0, 0.5);
                     background-color: rgb(255, 210, 210);
                 }
-                .citation.green{
+                .citation-container.green{
                     border-color: rgb(155, 255, 171);
                     box-shadow: 0 0 6px rgba(7, 170, 0, 0.5);
                     background-color: rgb(236, 253, 238);
                 }
-                .citation.green:before{
+                .citation-container.green:before{
                     content: "✓"; /* "✔";*/
                     color: rgb(155, 255, 171);
                     text-shadow: 0px 0px 3px #444;
@@ -64,7 +64,7 @@
                     margin-left: -58px;
 
                 }
-                .citation.yellow:before{
+                .citation-container.yellow:before{
                     content: "»";
                     color: rgb(243, 243, 62);
                     text-shadow: 0px 0px 3px #444;
@@ -72,7 +72,7 @@
                     font-size: 4em;
                     margin-left: -50px;
                 }
-                .citation.red:before{
+                .citation-container.red:before{
                     content: "!";
                     color: rgb(245, 113, 113);
                     line-height: 50px;
@@ -80,10 +80,10 @@
                 }
             </style>
 
-            <blockquote class="citation {{color}}">
-                <span id="citationContent">{{innerHTML}}</span>
+            <blockquote class="citation-container {{color}}">
+                <div class="citation-content">{{innerHTML}}</div>
                 <template if={{author}}>
-                    <cite>
+                    <cite class="citation-author">
                         {{decoration}}
                         <template if={{href}}>
                             <a href="{{href}}" target="_blank">{{author}}</a>
