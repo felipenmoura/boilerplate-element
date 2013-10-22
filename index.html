@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Citation Custom Element</title>
+    <head>
+            <meta charset="UTF-8">
+            <title>Citation Custom Element</title>
 
-	<!-- Importing Web Component's Polyfill -->
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130711/polymer.min.js"></script>
+            <!-- Importing Web Component's Polyfill -->
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130711/polymer.min.js"></script>
 
-	<!-- Importing Custom Elements -->
-	<link rel="import" href="src/citation.html" />
+            <!-- Importing Custom Elements -->
+            <link rel="import" href="src/citation.html" />
 
-        <style type="text/css">
-            .citation-container{}
-            .citation-content{}
-            .citation-author{}
-            .citation-author a{}
-            .citation-container:before{} /* the decoration icon */
-            .citation-container.red{}
-            .citation-container.yellow{}
-            .citation-container.green{}
-        </style>
+            <style type="text/css">
 
-</head>
-<body>
+                body{
+                    font-family: tahoma, arial, sans-serif;
+                }
 
-	<!-- Using Custom Elements -->
-	<citation author="Felipe N. Moura" href="http://felipenmoura.org/">
+                .citation-container{}
+                .citation-content{}
+                .citation-author{}
+                .citation-author a{}
+                .citation-container:before{} /* the decoration icon */
+                .citation-container.red{}
+                .citation-container.yellow{}
+                .citation-container.green{}
+            </style>
+
+    </head>
+    <body>
+
+        <h1>Citation Custom Elements</h1>
+
+        <citation author="Felipe N. Moura" href="http://felipenmoura.org/">
             Any random guy can say cool random things.
         </citation>
 
@@ -41,11 +47,10 @@
             This is a checkpoint
         </citation>
 
-        <citation author="Felipe N. Moura" href="http://felipenmoura.org/" >
-            A long message can be added to the block quote.<br/>
-            Actually, you can even add HTML elements to it,<br/>
-            for example, <a ref="http://felipenmoura.org/">links</a> or maybe <strong>strong</strong> tags.
-        </citation>
+        <div style="margin: 30px; line-height: 30px;">
+            <a href="http://github.com/felipenmoura/citation-custom-element/">Fork me on Github</a><br/>
+            <a href="http://felipenmoura.org/" rel="author">Felipe N. Moura</a>
+        </div>
 
-</body>
+    </body>
 </html>
