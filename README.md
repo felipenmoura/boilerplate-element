@@ -1,40 +1,43 @@
-# &lt;my-element&gt;
+# Citation Custom Elements
 
-TODO: Write a project description
+This custom elemnt allows you to add stylized citations and blockquotes.
 
-> Maintained by [Your Name](https://github.com/yourname).
+> Maintained by [Felipe N. de Moura](https://github.com/felipenmoura).
 
 ## Demo
 
-> [Check it live](http://customelements.github.io/boilerplate-element).
+> [Check it live](felipenmoura.github.io/citation-custom-element/).
 
 ## Usage
 
 1. Import Web Components' polyfill:
 
 	```xml
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130816/polymer.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130816/polymer.min.js"></script>
 	```
 
 2. Import Custom Element:
 
 	```xml
-	<link rel="import" href="src/my-element.html">
+	<link rel="import" href="src/citation.html">
 	```
 
 3. Start using it!
 
 	```xml
-	<my-element></my-element>
+	<citation>
+            Citation content.
+        </citation>
 	```
 
 ## Options
 
-Attribute  | Options                   | Default             | Description
----        | ---                       | ---                 | ---
-`foo`      | *string*                  | `bar`               | Lorem ipsum
-`bar`      | `abc`, `def`, `ghi` 	   | `foo`               | Lorem ipsum
-`height`   | *int*                     | `100`               | Lorem ipsum
+Attribute   | Options               | Default   | Description
+---         | ---                   | ---       | ---
+`author`    | *string*              | ``        | The citation's author name
+`href`      | *string*              | ``        | Citation source link or authors ref
+`color`     | `red`, `gree`, `blue` | ``        | A color effect to the citation(and decoration)
+`decoration`| *string*              | `—`       | A separator decoration to identify the author
 
 
 ## Contributing
