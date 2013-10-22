@@ -5,15 +5,35 @@
 	<title>&lt;my-element&gt;</title>
 
 	<!-- Importing Web Component's Polyfill -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130711/polymer.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130711/polymer.min.js"></script>
 
 	<!-- Importing Custom Elements -->
-	<link rel="import" href="src/my-element.html">
+	<link rel="import" href="src/citation.html" />
 </head>
 <body>
 
 	<!-- Using Custom Elements -->
-	<my-element></my-element>
+	<citation author="Felipe N. Moura" href="http://felipenmoura.org/" >
+            Any random guy can say cool random things.
+        </citation>
+
+        <citation color="yellow">
+            Pay attention!
+        </citation>
+
+        <citation color="red">
+            Something critical just happened!
+        </citation>
+
+        <citation color="green">
+            This is a checkpoint
+        </citation>
+
+        <citation author="Felipe N. Moura" href="http://felipenmoura.org/" >
+            A long message can be added to the block quote.<br/>
+            Actually, you can even add HTML elements to it,<br/>
+            for example, <a ref="http://felipenmoura.org/">links</a> or maybe <strong>strong</strong> tags.
+        </citation>
 
 </body>
 </html>
