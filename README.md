@@ -25,9 +25,9 @@ This custom elemnt allows you to add stylized citations and blockquotes.
 3. Start using it!
 
 	```xml
-	<citation>
-            Citation content.
-        </citation>
+	<x-citation>
+    Citation content.
+  </x-citation>
 	```
 
 ## Options
