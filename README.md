@@ -1,6 +1,6 @@
 # Citation Custom Elements
 
-This custom elemnt allows you to add stylized citations and blockquotes.
+This custom element allows you to add stylized citations and blockquotes.
 
 > Maintained by [Felipe N. de Moura](https://github.com/felipenmoura).
 
